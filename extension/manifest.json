@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "GPT Carbon Usage",
+  "description": "Estimate CO2 emissions for a ChatGPT session.",
+  "version": "0.1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://chat.openai.com/*", "https://chatgpt.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
